@@ -4,7 +4,7 @@ import os
 from pyrogram import Client, filters
 from helper.date import add_date
 from helper.database import uploadlimit, usertype, addpre
-ADMIN = int(os.environ.get("ADMIN", 1484670284))
+ADMIN = int(os.environ.get("ADMIN", 605691080))
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 
 
@@ -128,4 +128,4 @@ async def dft(bot,update):
 	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
 	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 1.2 GB renaming capacity ")
-	await bot.send_message(user_id,"Your Daily Data limit has been reset successsfully.\n\nCheck your plan here - /myplan\n- Contact Admin 🦋<a href='https://t.me/mRiderDM'>**LazyDeveloper**</a>🦋")
+	await bot.send_message(user_id,"Your Daily Data limit has been reset successsfully.\n\nCheck your plan here - /myplan\n- Contact Admin 🦋<a href='https://t.me/critical_cobra'>**Critical Cobra**</a>🦋")
